@@ -71,6 +71,7 @@ def posicao_valida(infofrota, linha, coluna, orientacao, tamanho):
             for navio in infofrota[tipodenavio]:
                 if posicao in navio:
                     disponivel = False
-        if desejada[0] > 10 or desejada[1] > 10:
-            disponivel = False
+        for casa in desejada:
+            if casa[0] > 10 or casa[1] > 10:
+                disponivel = False
     return disponivel
