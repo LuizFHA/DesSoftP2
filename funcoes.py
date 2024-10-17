@@ -73,4 +73,4 @@ def posicao_valida(infofrota, linha, coluna, orientacao, tamanho):
                     disponivel = False
         if desejada[0] > 10 or desejada[1] > 10:
             disponivel = False
-    return desejada
+    return disponivel
