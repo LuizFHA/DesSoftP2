@@ -72,6 +72,10 @@ def posicao_valida(infofrota, linha, coluna, orientacao, tamanho):
                 if posicao in navio:
                     disponivel = False
         for casa in desejada:
-            if casa[0] > 10 or casa[1] > 10:
+            if casa[0] >= 10 or casa[1] >= 10:
                 disponivel = False
     return disponivel
+
+#frota = {'porta-aviões': [[[2, 1], [3, 1], [4, 1], [5, 1]]]}
+#linha: 8, coluna: 8, orientacao: vertical, tamanho: 3
+#print(posicao_valida(frota, 8, 8, 'vertical', 3))
