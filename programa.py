@@ -72,3 +72,5 @@ while quantidade > 0:
     else:
         frota = preenche_frota(frota, nome, linha, coluna, orientacao, tamanho)
         quantidade -= 1
+
+print(frota)
