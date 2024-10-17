@@ -20,3 +20,10 @@ def preenche_frota(infofrota, nomenavio, linha, coluna, orientacao, tamanho):
     else:
         infofrota[nomenavio].append(define_posicoes(linha, coluna, orientacao, tamanho))
     return infofrota
+
+def faz_jogada(tabuleiro, linha, coluna):
+    if tabuleiro[linha][coluna] == 0:
+        tabuleiro[linha][coluna] == '-'
+    else:
+        tabuleiro[linha][coluna] == 'X'
+    return tabuleiro
