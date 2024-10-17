@@ -10,9 +10,9 @@ tamanho = 4
 quantidade = 1
 while quantidade > 0:
     print('Insira as informações referentes ao navio',nome,'que possui tamanho',tamanho)
-    linha = input('Digite a linha ')
-    coluna = input('Digite a coluna ')
-    orientacao = input('Digite a orientacao ')
+    linha = int(input('Digite a linha '))
+    coluna = int(input('Digite a coluna '))
+    orientacao = int(input('Digite a orientacao '))
     if orientacao == 1:
         orientacao = "vertical"
     elif orientacao == 2:
@@ -28,9 +28,9 @@ tamanho = 3
 quantidade = 2
 while quantidade > 0:
     print('Insira as informações referentes ao navio',nome,'que possui tamanho',tamanho)
-    linha = input('Digite a linha ')
-    coluna = input('Digite a coluna ')
-    orientacao = input('Digite a orientacao ')
+    linha = int(input('Digite a linha '))
+    coluna = int(input('Digite a coluna '))
+    orientacao = int(input('Digite a orientacao '))
     if orientacao == 1:
         orientacao = "vertical"
     elif orientacao == 2:
@@ -46,9 +46,9 @@ tamanho = 2
 quantidade = 3
 while quantidade > 0:
     print('Insira as informações referentes ao navio',nome,'que possui tamanho',tamanho)
-    linha = input('Digite a linha ')
-    coluna = input('Digite a coluna ')
-    orientacao = input('Digite a orientacao ')
+    linha = int(input('Digite a linha '))
+    coluna = int(input('Digite a coluna '))
+    orientacao = int(input('Digite a orientacao '))
     if orientacao == 1:
         orientacao = "vertical"
     elif orientacao == 2:
@@ -64,8 +64,8 @@ tamanho = 1
 quantidade = 4
 while quantidade > 0:
     print('Insira as informações referentes ao navio',nome,'que possui tamanho',tamanho)
-    linha = input('Digite a linha ')
-    coluna = input('Digite a coluna ')
+    linha = int(input('Digite a linha '))
+    coluna = int(input('Digite a coluna '))
     #orientacao = input('Digite a orientacao ')
     if posicao_valida(frota, linha, coluna, orientacao, tamanho) == False:
         print('Esta posição não está válida!')
