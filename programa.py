@@ -111,7 +111,7 @@ while jogando:
         while valido == False:
             ataquel = int(input("Qual linha você quer atacar? "))
             if ataquel > 9 or ataquel < 0:
-                print('Coluna inválida!')
+                print('Linha inválida!')
             else:
                 valido = True
         valido = False
