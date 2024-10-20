@@ -1,4 +1,5 @@
 from funcoes import *
+import random
 frota = {
     "porta-aviões":[],
     "navio-tanque":[],
@@ -103,6 +104,8 @@ jogando = True
 
 listajogadas = []
 
+listacontraataques = []
+
 while jogando:
     print(monta_tabuleiros(tabjogador, taboponente))
     ataque = False
@@ -130,3 +133,16 @@ while jogando:
     if afundados(frota_oponente, taboponente) == 10:
         print('Parabéns! Você derrubou todos os navios do seu oponente!')
         jogando = False
+    else:
+        contraataque = False
+        while contraataque == False:
+            contraataquel = random.randint(0,9)
+            contraataquec = random.randint(0,9)
+            if [contraataquel, contraataquec] not in listacontraataques:
+                listajogadas.append([ataquel, ataquec])
+                contraataque = True
+                print('Seu oponente está atacando na linha',contraataquel,'e coluna',contraataquec)
+                faz_jogada(tabjogador,contraataquel,contraataquec)
+                if afundados(frota, tabjogador) == 10:
+                    print('Xi! O oponente derrubou toda a sua frota =(')
+                    jogando = False
