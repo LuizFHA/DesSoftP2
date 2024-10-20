@@ -1,5 +1,7 @@
 from funcoes import *
 import random
+random.seed(2)
+
 frota = {
     "porta-aviões":[],
     "navio-tanque":[],
@@ -139,7 +141,7 @@ while jogando:
             contraataquel = random.randint(0,9)
             contraataquec = random.randint(0,9)
             if [contraataquel, contraataquec] not in listacontraataques:
-                listajogadas.append([ataquel, ataquec])
+                listacontraataques.append([contraataquel, contraataquec])
                 contraataque = True
                 print('Seu oponente está atacando na linha',contraataquel,'e coluna',contraataquec)
                 faz_jogada(tabjogador,contraataquel,contraataquec)
